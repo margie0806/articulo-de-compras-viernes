@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d6baba; /* Color de fondo */
+        }
+        div {
+            text-align: center;
+        }
+        button {
+            background-color: #af233f; /* Color de fondo del botón */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #2aa749; /* Color de fondo cuando se pasa el mouse sobre el botón */
+            transform: scale(1.05); /* Efecto de aumento en el botón */
+        }
+
+        button:active {
+            background-color: #1e7d31; /* Color más oscuro cuando el botón está presionado */
+            transform: scale(0.95); /* Efecto de reducción al presionar el botón */
+        }
+
+        button:nth-of-type(1) {
+            background-color: #e74c3c; /* Color específico para el botón "Resetear" */
+        }
+
+        button:nth-of-type(1):hover {
+            background-color: #c0392b; /* Color más oscuro para "Resetear" al pasar el mouse */
+        }
+
+        button:nth-of-type(2) {
+            background-color: #3498db; /* Color específico para el botón "Agregar" */
+        }
+
+        button:nth-of-type(2):hover {
+            background-color: #2980b9; /* Color más oscuro para "Agregar" al pasar el mouse */
+        }
+
+        button:nth-of-type(3) {
+            background-color: #f39c12; /* Color específico para el botón "Restar" */
+        }
+
+        button:nth-of-type(3):hover {
+            background-color: #e67e22; /* Color más oscuro para "Restar" al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Carrito de Compras</h1>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <img src="/actividad-carrito-de-compras-main/3 actividad javascrip/INICIO/IMAGEN/images.jpg" alt="Imagen del producto">
+        <h2>Bolso</h2>
+        <h3>Total $ 100.000</h3>
+        <button onclick="agregarAlCarrito()">
+            <i class="fas fa-shopping-cart"></i> Agregar
+        <button onclick="restarDelCarrito()">Restar</button>
+        <div id="contadorCarrito">0</div>
+        <button id="resetearBtn"><i class="fas fa-trash"></i></button>
+        
+
+    
+<div id="totalCarrito">Total: $0.00</div>
+
+
+
+
+        <p>Artículos en el carrito: <span id="contadorCarrito">0</span></p>
+    </div>
+
+    <script src="/actividad-carrito-de-compras-main/3 actividad javascrip/INICIO/JS/conta.js"></script>
+</body>
+</html>
